@@ -95,3 +95,4 @@ QUOTES = [
 `end_time = time.time() + (25 * 60)`
 
 - The project is hosted on render so that it can be viewed by anyone in the world and they can also access it.
+https://timetracker-svvb.onrender.com
