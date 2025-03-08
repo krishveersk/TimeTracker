@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TrackClock</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+
+    <body>
+        <h1>Track Time & Pomodoro</h1>
+        <h2>Track Tasks</h2>
+
+        <button onclick="toggleDarkMode()">Day/Night</button>
+        
+        <input type="text" id="taskName" placeholder="Task Name">
+        <button onclick="startTask()">New Task</button>
+        <button onclick="stopTask()">Stop Task</button>
+        <pre id="tasks"></pre>
+
+        <h2>Motivational Quote</h2>
+        <button onclick="getQuote()">Get Quote</button>
+        <p id="quote"></p>
+
+        <h2>Pomodro Timer</h2>
+        <button onclick="startPomodoro()">Start Pomodoro</button>
+        <button onclick="stopPomodoro()">Stop Pomodoro</button>
+        <p id="pomodoroStatus"></p>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>

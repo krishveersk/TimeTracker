@@ -1,0 +1,33 @@
+body {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.dark-mode {
+    background-color: black;
+    color: yellow;
+}
+
+h1 {
+    animation: neonFlash 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes neonFlash {
+    0% { color: cyan; }
+    50% { color: #ff00ff };
+    100% { color: cyan; }
+}
